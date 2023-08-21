@@ -1,0 +1,1 @@
+# Strapi Starter Angular 16, Typescript and Strapi
