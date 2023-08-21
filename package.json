@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "frontend": "yarn dev --prefix ../frontend/",
+    "backend": "yarn dev --prefix ../backend/",
+    "setup:frontend": "cd frontend && npm i",
+    "setup:backend": "cd backend && yarn",
+    "setup": "yarn install && yarn setup:frontend && yarn setup:backend",
+    "dev": "concurrently \"cd frontend && ng s -o\" \"cd backend && yarn develop\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
