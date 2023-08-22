@@ -6,30 +6,48 @@ This starter template uses backend as Strapi & frontend as Angular.
     - Strapi 4.12.5
     - Node 18
 
-## Usage
+## Get Started
 
-#### clone the repo
+#### Clone the repo:
 ```bash
 git clone https://github.com/vinodkumar937/angular-strapi-starter.git project-name
 ```
-#### change to project root
+#### Change to `project` directory:
 ```bash
 cd project-name
 ```
-#### install starter dependencies
+#### Install starter dependencies:
 ```bash
 yarn
 ```
-#### setup backend & frontend
+#### `Setup` backend & frontend:
 ```bash
 yarn setup
 ```
-#### build strapi admin panel
+#### Create a `.env` in `/backend` folder, update accordingly:
+```bash
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS="toBeModified1,toBeModified2"
+API_TOKEN_SALT=tobemodified
+ADMIN_JWT_SECRET=tobemodified
+TRANSFER_TOKEN_SALT=tobemodified
+JWT_SECRET=tobemodified
+
+# strapi Init Admin plugin
+INIT_ADMIN_USERNAME=admin
+INIT_ADMIN_PASSWORD=password
+INIT_ADMIN_FIRSTNAME=firstname
+INIT_ADMIN_LASTNAME=lastname
+INIT_ADMIN_EMAIL=username@mail.com
+```
+
+#### Build strapi admin panel:
 ```bash
 yarn build:backend
 ```
 
-#### start backend & frontend
+#### Start backend & frontend:
 ```bash
 yarn develop
 ```
