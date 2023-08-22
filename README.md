@@ -2,17 +2,15 @@
 
 This starter template uses backend as Strapi & frontend as Angular.
 
-Angular 16
-
-Strapi 4.12.5
-
-Node 18
+    - Angular 16
+    - Strapi 4.12.5
+    - Node 18
 
 ## Usage
 
 #### clone the repo
 ```bash
-git clone repo-name project-name
+git clone https://github.com/vinodkumar937/angular-strapi-starter.git project-name
 ```
 #### change to project root
 ```bash
