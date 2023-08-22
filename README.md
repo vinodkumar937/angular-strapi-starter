@@ -3,7 +3,9 @@
 This starter template uses backend as Strapi & frontend as Angular.
 
 Angular 16
+
 Strapi 4.12.5
+
 Node 18
 
 ## Usage
