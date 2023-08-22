@@ -5,7 +5,8 @@
     "setup:frontend": "cd frontend && npm i",
     "setup:backend": "cd backend && yarn",
     "setup": "yarn install && yarn setup:frontend && yarn setup:backend",
-    "dev": "concurrently \"cd frontend && ng s -o\" \"cd backend && yarn develop\""
+    "dev": "concurrently \"cd frontend && ng s -o\" \"cd backend && yarn develop\"",
+    "build:backend":"cd backend && yarn build"
   },
   "dependencies": {
     "concurrently": "^8.2.0"
