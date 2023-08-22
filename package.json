@@ -1,18 +1,27 @@
 {
   "name": "angular-strapi-starter",
   "version": "0.1.0",
+  "type": "module",
   "description": "Angular Strapi starter template",
   "scripts": {
     "frontend": "yarn dev --prefix ../frontend/",
     "backend": "yarn dev --prefix ../backend/",
     "setup:frontend": "cd frontend && npm i",
     "setup:backend": "cd backend && yarn",
-    "setup": "yarn install && yarn setup:frontend && yarn setup:backend",
+    "setup": "yarn install && yarn setup:frontend && yarn setup:backend && node ./scripts/env.js",
     "develop": "concurrently \"cd frontend && ng s -o\" \"cd backend && yarn develop\"",
-    "build:backend":"cd backend && yarn build"
+    "build:backend": "cd backend && yarn build",
+    "clear:backend":"cd backend && rm -rf .cache && rm -rf .tmp  && rm -rf build  && rm -rf .env  && rm -rf node_modules",
+    "clear:frontend":"cd frontend && rm -rf .angular && rm -rf node_modules",
+    "clear":"yarn clear:backend && yarn clear:frontend"
   },
   "dependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7"
   },
   "license": "MIT"
 }
