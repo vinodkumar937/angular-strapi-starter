@@ -10,38 +10,28 @@ Node 18
 
 ## Usage
 
+#### clone the repo
 ```bash
-# clone the repo
 git clone repo-name project-name
-
 ```
-
+#### change to project root
 ```bash
-# change to project root
 cd project-name
-
 ```
-
+#### install starter dependencies
 ```bash
-# install starter dependencies
 yarn
-
 ```
-
+#### setup backend & frontend
 ```bash
-# setup backend & frontend
 yarn setup
-
 ```
-
+#### build strapi admin panel
 ```bash
-# build strapi admin panel
 yarn build:backend
-
 ```
 
+#### start backend & frontend
 ```bash
-# start backend & frontend
 yarn develop
-
 ```
