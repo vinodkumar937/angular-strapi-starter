@@ -12,8 +12,11 @@
     "develop": "concurrently \"cd frontend && ng s -o\" \"cd backend && yarn develop\"",
     "build:backend": "cd backend && yarn build",
     "clear:backend":"cd backend && rm -rf .cache && rm -rf .tmp  && rm -rf build  && rm -rf .env  && rm -rf node_modules",
-    "clear:frontend":"cd frontend && rm -rf .angular && rm -rf node_modules",
-    "clear":"yarn clear:backend && yarn clear:frontend"
+    "clear:frontend":"cd frontend && rm -rf .angular && rm -rf node_modules && rm -rf dist",
+    "clear:root":"rm -rf node_modules",
+    "clear":"yarn clear:root && yarn clear:backend && yarn clear:frontend",
+    "frontend:ngx-bootstrap":"cd frontend  && ng add ngx-bootstrap",
+    "frontend:tailwindcss":"cd frontend && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init && node ../scripts/tailwind.js"
   },
   "dependencies": {
     "concurrently": "^8.2.0",

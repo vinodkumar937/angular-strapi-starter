@@ -8,7 +8,7 @@ const generateASecret = () => crypto.randomBytes(16).toString("base64");
 async function createEnvFile() {
   try {
 
-    const tmpl = fs.readFileSync("./scripts/env.template");
+    const tmpl = fs.readFileSync("./scripts/templates/env/env.template");
     const compile = _.template(tmpl.toString());
 
     const tokens = compile({
